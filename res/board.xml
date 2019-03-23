@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<asset>
+    <package>
+        <name>Heroquest</name>
+
+        <tileset>
+            <geometry>square</geometry>
+            <size x="26" y="19"/>
+        </tileset>
+
+    </package>
+
+    <layout id="base" desc="Base board to build on top of it">
+        <!-- Base floor -->
+        <tile name="floor-15x15" zindex="0" x="1" y="1"/>
+        <tile name="floor-15x15" zindex="0" x="12" y="1"/>
+        <tile name="floor-15x15" zindex="0" x="1" y="5"/>
+        <tile name="floor-15x15" zindex="0" x="12" y="5"/>
+
+        <!-- external walls -->
+        <tile name="corner-2x2-1_1" zindex="1" x="0" y="0" rotate="180"/>
+        <tile name="corner-2x2-1_1" zindex="1" x="26" y="0" rotate="270"/>
+        <tile name="corner-2x2-1_1" zindex="1" x="26" y="19" rotate="0"/>
+        <tile name="corner-2x2-1_1" zindex="1" x="0" y="19" rotate="90"/>
+
+        <tile name="straight-4x4-1_1" zindex="1" x="2" y="0"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="6" y="0"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="10" y="0"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="14" y="0"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="18" y="0"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="22" y="0"/>
+
+        <tile name="straight-4x4-1_1" zindex="1" x="2" y="17" rotate="180"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="6" y="17" rotate="180"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="10" y="17" rotate="180"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="14" y="17" rotate="180"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="18" y="17" rotate="180"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="22" y="17" rotate="180"/>
+
+        <tile name="straight-4x4-1_1" zindex="1" x="0" y="2" rotate="270"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="0" y="6" rotate="270"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="0" y="10" rotate="270"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="0" y="14" rotate="270"/>
+        <tile name="straight-2x2-1_1" zindex="1" x="0" y="17" rotate="270"/>
+
+        <tile name="straight-4x4-1_1" zindex="1" x="24" y="2" rotate="90"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="24" y="6" rotate="90"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="24" y="10" rotate="90"/>
+        <tile name="straight-4x4-1_1" zindex="1" x="24" y="14" rotate="90"/>
+        <tile name="straight-2x2-1_1" zindex="1" x="26" y="17" rotate="90"/>
+    </layout>
+
+    <layout id="walls" desc="Default walls">
+        <!-- Horizontal -->
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="2" y="1"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="6" y="1"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="10" y="1"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="15" y="1"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="18" y="1"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="22" y="1"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="2" y="4"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="6" y="4"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="18" y="5"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="22" y="5"/>
+
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="10" y="6"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="15" y="6"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="11" y="7"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="15" y="7"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="2" y="9"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="6" y="9"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="18" y="9"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="22" y="9"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="2" y="10"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="6" y="10"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="18" y="10"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="22" y="10"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="11" y="12"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="15" y="12"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="6" y="13"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="10" y="13"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="15" y="13"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="2" y="14"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="19" y="14"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="22" y="14"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="2" y="18"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="6" y="18"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="10" y="18"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="15" y="18"/>
+        <tile name="wall-straight-3x2-1_1" zindex="1" x="19" y="18"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="22" y="18"/>
+
+        <!-- Vertical -->
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="0" y="3" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="0" y="7" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="0" y="12" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="0" y="16" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="4" y="3" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="4" y="7" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="4" y="12" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="4" y="16" rotate="270"/>
+
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="7" y="11" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="7" y="12" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="8" y="3" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="8" y="7" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="8" y="12" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="8" y="16" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="9" y="9" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="10" y="11" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="11" y="3" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="12" y="5" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="11" y="15" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="12" y="17" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="13" y="3" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="14" y="5" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="13" y="15" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="14" y="17" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="15" y="9" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="16" y="11" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="16" y="3" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="16" y="7" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="17" y="11" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="17" y="12" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="17" y="15" rotate="270"/>
+        <tile name="wall-straight-2x2-1_1" zindex="1" x="18" y="17" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="20" y="3" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="20" y="7" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="20" y="12" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="20" y="16" rotate="270"/>
+
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="24" y="3" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="24" y="7" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="24" y="12" rotate="270"/>
+        <tile name="wall-straight-4x2-1_1" zindex="1" x="24" y="16" rotate="270"/>
+
+        <!-- Decorators -->
+        <tile name="wall-fix-cross" zindex="2" x="5.5" y="4.5"/>
+        <tile name="wall-fix-cross" zindex="2" x="21.5" y="5.5"/>
+        <tile name="wall-fix-cross" zindex="2" x="21.5" y="14.5"/>
+        <tile name="wall-fix-cross" zindex="2" x="9.5" y="13.5"/>
+
+        <tile name="wall-fix-overlap" zindex="2" x="5.5" y="1.5"/>
+        <tile name="wall-fix-overlap" zindex="2" x="9.5" y="1.5"/>
+        <tile name="wall-fix-overlap" zindex="2" x="17.5" y="1.5"/>
+        <tile name="wall-fix-overlap" zindex="2" x="21.5" y="1.5"/>
+        <tile name="wall-fix-overlap" zindex="2" x="5.5" y="10.5"/>
+        <tile name="wall-fix-overlap" zindex="2" x="7.5" y="10.5"/>
+        <tile name="wall-fix-overlap" zindex="2" x="21.5" y="10.5"/>
+
+        <tile name="wall-fix-overlap" zindex="2" x="5.5" y="9.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="21.5" y="9.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="7.5" y="13.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="17.5" y="13.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="5.5" y="18.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="9.5" y="18.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="18.5" y="18.5" rotate="180"/>
+        <tile name="wall-fix-overlap" zindex="2" x="21.5" y="18.5" rotate="180"/>
+
+        <tile name="wall-fix-overlap" zindex="2" x="9.5" y="4.5" rotate="90"/>
+        <tile name="wall-fix-overlap" zindex="2" x="25.5" y="5.5" rotate="90"/>
+        <tile name="wall-fix-overlap" zindex="2" x="17.5" y="6.5" rotate="90"/>
+        <tile name="wall-fix-overlap" zindex="2" x="5.5" y="14.5" rotate="90"/>
+        <tile name="wall-fix-overlap" zindex="2" x="25.5" y="14.5" rotate="90"/>
+
+        <tile name="wall-fix-overlap" zindex="2" x="1.5" y="4.5" rotate="270"/>
+        <tile name="wall-fix-overlap" zindex="2" x="17.5" y="5.5" rotate="270"/>
+        <tile name="wall-fix-overlap" zindex="2" x="9.5" y="6.5" rotate="270"/>
+        <tile name="wall-fix-overlap" zindex="2" x="5.5" y="13.5" rotate="270"/>
+        <tile name="wall-fix-overlap" zindex="2" x="1.5" y="14.5" rotate="270"/>
+        <tile name="wall-fix-overlap" zindex="2" x="18.5" y="14.5" rotate="270"/>
+
+        <tile name="wall-fix-turn" zindex="2" x="1.5" y="1.5"/>
+        <tile name="wall-fix-turn" zindex="2" x="1.5" y="10.5"/>
+        <tile name="wall-fix-turn" zindex="2" x="10.5" y="7.5"/>
+        <tile name="wall-fix-turn" zindex="2" x="14.5" y="1.5"/>
+        <tile name="wall-fix-turn" zindex="2" x="14.5" y="13.5"/>
+        <tile name="wall-fix-turn" zindex="2" x="17.5" y="10.5"/>
+
+        <tile name="wall-fix-turn" zindex="2" x="12.5" y="1.5" rotate="90"/>
+        <tile name="wall-fix-turn" zindex="2" x="25.5" y="1.5" rotate="90"/>
+        <tile name="wall-fix-turn" zindex="2" x="16.5" y="7.5" rotate="90"/>
+        <tile name="wall-fix-turn" zindex="2" x="9.5" y="10.5" rotate="90"/>
+        <tile name="wall-fix-turn" zindex="2" x="12.5" y="13.5" rotate="90"/>
+        <tile name="wall-fix-turn" zindex="2" x="18.5" y="13.5" rotate="90"/>
+        <tile name="wall-fix-turn" zindex="2" x="25.5" y="10.5" rotate="90"/>
+
+        <tile name="wall-fix-turn" zindex="2" x="12.5" y="6.5" rotate="180"/>
+        <tile name="wall-fix-turn" zindex="2" x="9.5" y="9.5" rotate="180"/>
+        <tile name="wall-fix-turn" zindex="2" x="25.5" y="9.5" rotate="180"/>
+        <tile name="wall-fix-turn" zindex="2" x="16.5" y="12.5" rotate="180"/>
+        <tile name="wall-fix-turn" zindex="2" x="25.5" y="18.5" rotate="180"/>
+        <tile name="wall-fix-turn" zindex="2" x="12.5" y="18.5" rotate="180"/>
+
+        <tile name="wall-fix-turn" zindex="2" x="1.5" y="9.5" rotate="270"/>
+        <tile name="wall-fix-turn" zindex="2" x="1.5" y="18.5" rotate="270"/>
+        <tile name="wall-fix-turn" zindex="2" x="10.5" y="12.5" rotate="270"/>
+        <tile name="wall-fix-turn" zindex="2" x="14.5" y="6.5" rotate="270"/>
+        <tile name="wall-fix-turn" zindex="2" x="14.5" y="18.5" rotate="270"/>
+        <tile name="wall-fix-turn" zindex="2" x="17.5" y="9.5" rotate="270"/>
+    </layout>
+</asset>
