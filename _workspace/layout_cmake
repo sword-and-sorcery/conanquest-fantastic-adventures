@@ -1,0 +1,8 @@
+{% set workspace_folder="/Users/jgsogo/dev/projects/sword-and-sorcery/conanquest-fantastic-adventures/_workspace/" %}
+
+# The source_folder, build_folder are useful for workspaces
+[source_folder]
+.
+
+[build_folder]
+{{ workspace_folder }}build/{{ settings.build_type }}/{{ reference.name }}

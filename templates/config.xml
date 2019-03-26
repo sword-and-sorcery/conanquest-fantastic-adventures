@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<board id="{{ id }}" name="{{ name }}">
+    <tilesets>
+        {% for name, path in tilesets.items() %}
+        <tileset id="{{ name }}">{{ path }}</tileset>
+        {% endfor %}
+    </tilesets>
+    
+    <!-- 
+        <geometry>square</geometry>
+        <size x="26" y="19"/>
+    -->
+
+    <layouts>
+        <layout id="base">layout/board.xml</layout>
+        <layout id="walls">layout/board.xml</layout>
+    </layouts>
+
+</board>
