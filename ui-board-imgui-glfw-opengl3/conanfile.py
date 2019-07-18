@@ -25,7 +25,7 @@ class UIImguiGlfwOpengl3(ConanFile):
     name = "conanquest+ui-board-imgui-glfw-opengl3"
     version = "0.0"
 
-    # exports_sources = "../layout*"
+    exports_sources = "../layout*"
 
     def requirements(self):
         self.requires("assets-dungeon/1.0@sword/sorcery")
@@ -36,8 +36,10 @@ class UIImguiGlfwOpengl3(ConanFile):
         os.makedirs(data_folder, exist_ok=True)
         
         # Copy layouts
-        shutil.rmtree(os.path.join(data_folder, 'layout'))
-        shutil.copytree(src=os.path.join(self.source_folder, '..', 'layout'), dst=os.path.join(data_folder, 'layout'))
+        layout_folder = os.path.join(data_folder, 'layout')
+        if os.path.exists(layout_folder):
+            shutil.rmtree(layout_folder)
+        shutil.copytree(src=os.path.join(self.source_folder, 'layout'), dst=layout_folder)
 
         # Generate a config.xml file per each episode
         tilesets = {"dungeon": "tileset/Dungeon Tiles/Dungeon Tiles.xml"}
