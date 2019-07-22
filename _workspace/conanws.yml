@@ -1,20 +1,22 @@
 editables:
-    assets-dungeon/1.0@sword/sorcery:
-        path: ../../assets-dungeon
     core-messages/0.0@sword/sorcery:
         path: ../../core-messages
+        target_name: messages
     core-communications/0.0@sword/sorcery:
         path: ../../core-communications
+        target_name: communications
     ui-tileset/0.0@sword/sorcery:
         path: ../../ui-tileset
+        target_name: tileset
     ui-tileset-glfw/0.0@sword/sorcery:
         path: ../../ui-tileset-glfw
+        target_name: tileset_glfw
     ui-board_game/0.0@sword/sorcery:
         path: ../../ui-board_game
+        target_name: board_game
     ui-board-imgui-glfw-opengl3/0.0@sword/sorcery:
         path: ../../ui-board-imgui-glfw-opengl3/
-    conanquest+ui-board-imgui-glfw-opengl3/0.0@sword/sorcery:
-        path: ../../conanquest-fantastic-adventures/ui-board-imgui-glfw-opengl3/
+        target_name: board_imgui
 layout: layout_cmake
 workspace_generator: cmake
 root: ui-board-imgui-glfw-opengl3/0.0@sword/sorcery

@@ -42,7 +42,7 @@ class UIImguiGlfwOpengl3(ConanFile):
         shutil.copytree(src=os.path.join(self.source_folder, 'layout'), dst=layout_folder)
 
         # Generate a config.xml file per each episode
-        tilesets = {"dungeon": "tileset/Dungeon Tiles/Dungeon Tiles.xml"}
+        tilesets = {"dungeon": "tileset/Dungeon Tiles.xml"}
         for _, name, config in get_episodes(tilesets=tilesets):
             with open(os.path.join(data_folder, name + '.xml'), "w") as f:
                 f.write(config)

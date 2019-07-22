@@ -12,8 +12,8 @@
     -->
 
     <layouts>
-        <layout id="base">layout/board.xml</layout>
-        <layout id="walls">layout/board.xml</layout>
+        <layout id="base" tileset="dungeon">layout/board.xml</layout>
+        <layout id="walls" tileset="dungeon">layout/board.xml</layout>
     </layouts>
 
 </board>

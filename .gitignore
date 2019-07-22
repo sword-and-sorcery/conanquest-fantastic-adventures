@@ -1,6 +1,13 @@
 */build/*
 */.idea/*
 */cmake-build-debug/*
+_workspace/Find*
+_workspace/conanbuildinfo.cmake
+_workspace/conanbuildinfo.txt
+_workspace/conaninfo.txt
+_workspace/conanworkspace.cmake
+_workspace/graph_info.json
+_workspace/CMakeLists.txt
 
 # Prerequisites
 *.d
