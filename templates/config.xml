@@ -10,7 +10,8 @@
         <geometry>square</geometry>
         <size x="26" y="19"/>
     -->
-
+    <size units="200" width="26" height="19"/>
+    
     <layouts>
         <layout id="base" tileset="dungeon">layout/board.xml</layout>
         <layout id="walls" tileset="dungeon">layout/board.xml</layout>
