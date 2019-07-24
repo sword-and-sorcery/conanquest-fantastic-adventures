@@ -1,5 +1,7 @@
 # conanquest-fantastic-adventures
 
+> ⚠️ **Full docs**: https://sword-and-sorcery.github.io/sword-and-sorcery/
+
 This package gathers the executables, libraries, assets and resources needed to run a game. Several
 artifacts will be needed here, each of them in its own directory:
  * ui-board-game: visualization of the board. It is not a C++ package, it just gathers the assets,
